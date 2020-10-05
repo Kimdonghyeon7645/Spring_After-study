@@ -5,6 +5,8 @@ public class Book {
     private String title;
     private String author;
 
+    public Book() {}
+
     public Book(String title, String author) {
         setTitle(title);
         setAuthor(author);
