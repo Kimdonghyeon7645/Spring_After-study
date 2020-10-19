@@ -9,9 +9,10 @@ public class TestUseAnnoTest {
             System.out.println(tua.getClass());
 
             // 리플렉션(Reflection) : 런타임에 클래스의 메타 정보를 얻는 기능
-            System.out.println(tua.getClass().getDeclaredMethod("UseAnno"));
-            Method m = tua.getClass().getDeclaredMethod("UseAnno");
-            if(m.isAnnotationPresent(TestAnno.class)){
+//            Method m = tua.getClass().getDeclaredMethod("UseAnno");
+            Method m = tua.getClass().getDeclaredMethod("NotUseAnno");
+            System.out.println(m);
+            if(m.isAnnotationPresent(TestAnno.class)){  // TesAnno 라는 어노테이션에 속해있는 메소드인가?
                 tua.UseAnno();
             }
         } catch (NoSuchMethodException | SecurityException e) {
