@@ -13,10 +13,8 @@ class Student{
 	public boolean equals(Object obj) { //equals() 메서드 오버라이딩
 		if( obj instanceof Student) {
 			Student std = (Student)obj;
-			//return (this.studentNum == std.studentNum );
-			if(this.studentNum == std.studentNum  && this.studentName == std.studentName )
-				return true;
-			else return false;
+			//return (this.studentNum == std.studentNum );	// 원래 메서드 정의
+			return this.studentNum == std.studentNum && this.studentName == std.studentName ;	// 새로 재정의 (오버라이딩)
 		}
 		return false;
 	}
