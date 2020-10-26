@@ -1,4 +1,4 @@
-package Teacher;
+package Teacher1;
 
 import java.util.Calendar;
 

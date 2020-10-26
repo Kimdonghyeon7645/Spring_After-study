@@ -1,4 +1,4 @@
-package Teacher;
+package Teacher1;
 
 public class Company {
 
