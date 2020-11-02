@@ -1,5 +1,6 @@
 package Lesson5;
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class LinkedListTest {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class LinkedListTest {
         myList.add("C");
 
         System.out.println(myList);
-        myList.add("D");
+        myList.add(1, "D");
 
         System.out.println(myList);
         myList.removeLast();
@@ -19,5 +20,6 @@ public class LinkedListTest {
             String s = myList.get(i);
             System.out.println(s);
         }
+
     }
 }
