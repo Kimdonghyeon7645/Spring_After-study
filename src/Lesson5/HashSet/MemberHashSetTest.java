@@ -1,4 +1,4 @@
-package Lesson5;
+package Lesson5.HashSet;
 
 public class MemberHashSetTest {
     public static void main(String[] args) {
