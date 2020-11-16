@@ -1,17 +1,19 @@
 package Teacher3;
 
+import Teacher3.HashSet.Member;
+
 import java.util.Iterator;
 import java.util.TreeMap;
 
 public class MemberTreeMap {
 	
-	private TreeMap<Integer, Member> treeMap;
+	private TreeMap<Integer, Teacher3.HashSet.Member> treeMap;
 	
 	public MemberTreeMap() {
-		treeMap = new TreeMap<Integer, Member>();
+		treeMap = new TreeMap<Integer, Teacher3.HashSet.Member>();
 	}
 	
-	public void addMember(Member member) {
+	public void addMember(Teacher3.HashSet.Member member) {
 		treeMap.put(member.getMemberId(), member);
 	}
 	

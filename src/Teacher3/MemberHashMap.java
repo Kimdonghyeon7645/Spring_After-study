@@ -1,17 +1,19 @@
 package Teacher3;
 
+import Teacher3.HashSet.Member;
+
 import java.util.HashMap;
 import java.util.Iterator;
 
 public class MemberHashMap {
 	
-	private HashMap<Integer, Member> hashMap;
+	private HashMap<Integer, Teacher3.HashSet.Member> hashMap;
 	
 	public MemberHashMap() {
-		hashMap = new HashMap<Integer, Member>();
+		hashMap = new HashMap<Integer, Teacher3.HashSet.Member>();
 	}
 	
-	public void addMember(Member member) {
+	public void addMember(Teacher3.HashSet.Member member) {
 		hashMap.put(member.getMemberId(), member);
 	}
 	

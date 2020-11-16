@@ -1,25 +1,27 @@
-package Teacher3;
+package Teacher3.HashSet;
+
+import Teacher3.HashSet.Member;
 
 import java.util.HashSet;
 import java.util.Iterator;
 
 public class MemberHashSet { // Member�� HashSet���� ����
 	
-	private HashSet<Member> hashSet;
+	private HashSet<Teacher3.HashSet.Member> hashSet;
 	
 	public MemberHashSet() {
-		hashSet = new HashSet<Member>();
+		hashSet = new HashSet<Teacher3.HashSet.Member>();
 	}
 
-	public void addMember(Member member) {
+	public void addMember(Teacher3.HashSet.Member member) {
 		hashSet.add(member);
 	}
 	
 	public boolean removeMember(int memberId) {
 		
-		Iterator<Member> ir = hashSet.iterator();
+		Iterator<Teacher3.HashSet.Member> ir = hashSet.iterator();
 		while( ir.hasNext()) {
-			Member member = ir.next();
+			Teacher3.HashSet.Member member = ir.next();
 			if( member.getMemberId() == memberId) {
 				hashSet.remove(member);
 				return true;

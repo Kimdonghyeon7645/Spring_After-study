@@ -1,4 +1,4 @@
-package Teacher3;
+package Teacher3.HashSet;
 
 public class Member {
 
@@ -28,5 +28,6 @@ public class Member {
 		return memberName + "ȸ������ ���̵�� " + memberId + "�Դϴ�.";
 	}
 
-	
+	//ArrayList
+	//Vector
 }

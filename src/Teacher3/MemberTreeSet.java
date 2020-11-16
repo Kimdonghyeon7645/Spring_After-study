@@ -1,27 +1,29 @@
 package Teacher3;
 
+import Teacher3.HashSet.Member;
+
 import java.util.Iterator;
 import java.util.TreeSet;
 
 public class MemberTreeSet {
 	
-	private TreeSet<Member> treeSet;
+	private TreeSet<Teacher3.HashSet.Member> treeSet;
 	
 	public MemberTreeSet() {
 		// Comparator�� �����ϴ� ��� �Ű������� compare()�� ���ǵǾ� �ִ� ��ü�� ����Ʈ ������ �־��־�� ��.
 		// treeSet = new TreeSet<Member>(new Member());
-		treeSet = new TreeSet<Member>();
+		treeSet = new TreeSet<Teacher3.HashSet.Member>();
 	}
 
-	public void addMember(Member member) {
+	public void addMember(Teacher3.HashSet.Member member) {
 		treeSet.add(member);
 	}
 	
 	public boolean removeMember(int memberId) {
 		
-		Iterator<Member> ir = treeSet.iterator();
+		Iterator<Teacher3.HashSet.Member> ir = treeSet.iterator();
 		while( ir.hasNext()) {
-			Member member = ir.next();
+			Teacher3.HashSet.Member member = ir.next();
 			if( member.getMemberId() == memberId) {
 				treeSet.remove(member);
 				return true;

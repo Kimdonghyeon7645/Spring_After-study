@@ -1,4 +1,4 @@
-package Teacher3;
+package Teacher3.HashSet;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,10 +9,10 @@ public class HashSetTest {
 
 		HashSet<String> set = new HashSet<String>();
 		//ArrayList<String> set = new ArrayList<String>();
-		set.add("�̼���");
-		set.add("������");
-		set.add("������");
-		set.add("�̼���"); //�ȵ�, String���� �̹� equals�޼ҵ忡�� ���ǵǾ� ����
+		set.add("이순신");
+		set.add("김유신");
+		set.add("강감찬");
+		set.add("이순신"); //안들어감, String에서 이미 equals메소드에서 정의되어 있음
 		
 		Iterator<String> ir = set.iterator();
 		
